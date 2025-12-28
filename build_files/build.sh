@@ -11,6 +11,7 @@ set -ouex pipefail
 
 # this installs a package from fedora repos
 dnf5 copr enable solopasha/hyprland
+dnf5 update
 dnf5 install -y hyprland hyprlock hyprpaper waybar
 
 # Use a COPR Example:
